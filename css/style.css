@@ -1,0 +1,739 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/*  global rules */
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0px 30px;
+    margin: 0px auto;
+}
+
+/*-----------------------------------------------------*/
+/* root */
+:root {
+    --color-1: rgb(222, 218, 220);
+    --color-2: rgb(0, 199, 252);
+    --color-3: rgba(20, 99, 119, 70%);
+    --color-4: rgb(119, 119, 119);
+    --transition: .3s;
+}
+
+/*-----------------------------------------------------*/
+/* start header */
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header .container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .container::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 60px);
+    height: 1px;
+    background-color: var(--color-1);
+    bottom: 0;
+    z-index: -1;
+}
+
+header .container nav {
+    display: flex;
+    align-items: center;
+}
+
+header .container nav ul {
+    display: flex;
+    margin-right: 15px;
+}
+
+header .container nav ul li {
+    transition: var(--transition);
+}
+
+header .container nav ul li a {
+    padding: 30px 15px;
+    font-size: 14px;
+    color: whitesmoke;
+    display: block;
+    transition: var(--transition);
+}
+
+header .container nav ul li a:hover {
+    color: var(--color-2);
+    border-bottom: 1px solid var(--color-2);
+}
+
+header .container nav .form {
+    border-left: 1px solid white;
+    padding: 5px 0px 5px 15px;
+}
+
+header .container nav .form i {
+    color: white;
+    font-size: 20px;
+}
+
+header .container .menu {
+    padding: 30px 15px;
+    display: none;
+}
+
+header .container .menu i {
+    color: white;
+    font-size: 30px;
+}
+
+/* end header */
+/* Start Landing */
+.landing {
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.landing .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 60%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.landing .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    background-color: var(--color-3);
+    padding: 50px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.landing .text .content h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.landing .text .content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* End Landing */
+
+/* Start Services */
+
+.Services {
+    height: 100vH;
+}
+
+.Services .container .Services-header {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.Services .container .Services-header h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.Services .container .Services-header p {
+    margin: 15px 0;
+    line-height: 32px;
+    color: var(--color-4);
+}
+
+.Services .container .Services-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(347px, 1fr));
+    gap: 60px;
+    margin: 30px 0 0 0;
+}
+
+.Services .container .Services-cards .card {
+    display: flex;
+}
+
+.Services .container .Services-cards .card i {
+    margin-right: 40px;
+}
+
+.Services .container .Services-cards .card .text h3 {
+    margin-bottom: 20px;
+    color: var(--color-2);
+}
+
+.Services .container .Services-cards .card .text p {
+    color: var(--color-4);
+    line-height: 32px;
+}
+
+/* End Services */
+
+/* Start Design */
+
+.Design {
+    position: relative;
+    background-image: url(../images/design-features.jpg);
+    background-size: cover;
+    overflow: hidden;
+    height: 600px;
+}
+
+.Design::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 60%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.Design .image {
+    position: relative;
+    top: 35%;
+    left: 15%;
+}
+
+.Design .text {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50%;
+    background-color: var(--color-3);
+    padding: 50px;
+    color: white;
+}
+
+.Design .text .content h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.Design .text .content ul li {
+    padding: 0 0 15px 0;
+}
+
+.Design .text .content ul li i {
+    padding: 0 15px 0 0;
+}
+
+.Design .text .content ul li p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    display: inline-block;
+}
+
+
+/* End Design */
+
+/* Start Portfolio */
+
+.Portfolio {
+    padding-bottom: 30px;
+}
+
+.Portfolio .container .Portfolio-header {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.Portfolio .container .Portfolio-header h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.Portfolio .container .Portfolio-header p {
+    margin: 15px 0;
+    line-height: 32px;
+    color: var(--color-4);
+}
+
+.Portfolio .container ul {
+    display: flex;
+    justify-content: center;
+}
+
+.Portfolio .container ul li {
+    padding: 10px 20px;
+}
+
+.Portfolio .container ul li:hover {
+    background-color: var(--color-2);
+    color: white;
+}
+
+.Portfolio .image {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.Portfolio .image .box {
+    position: relative;
+    overflow: hidden;
+}
+
+.Portfolio .image .box:hover .text {
+    bottom: 0;
+}
+
+.Portfolio .image .box:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+
+.Portfolio .image .box img {
+    width: 100%;
+    transition: .3s;
+}
+
+.Portfolio .image .box .text {
+    position: absolute;
+    bottom: -80px;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    transition: .3s;
+}
+
+.Portfolio .image .box .text h4 {
+    font-weight: 400;
+}
+
+.Portfolio .image .box .text p {
+    color: var(--color-2);
+}
+
+.Portfolio a {
+    display: block;
+    background-color: var(--color-2);
+    width: fit-content;
+    padding: 10px 20px;
+    margin: auto;
+    color: white;
+}
+
+/* End Portfolio */
+
+/* Start video section */
+
+.video {
+    position: relative;
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+.video::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 60%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.video video {
+    width: 100%;
+}
+
+.video .text {
+    background-color: var(--color-3);
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 60px 0;
+}
+
+.video .text h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.video .text p {
+    color: white;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.video .text button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+}
+
+/* End video section */
+
+/* Start About */
+
+.About .container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.About .container .About-header {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.About .container .About-header h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.About .container .About-header p {
+    margin: 15px 0;
+    line-height: 32px;
+    color: var(--color-4);
+}
+
+.About .container img {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* End About */
+
+/* Start stats */
+
+.stats {
+    background-image: url(../images/stats.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.stats::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 70%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.stats .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+    background-color: var(--color-3);
+    align-items: center;
+    margin: 100px auto;
+}
+
+.stats .container .card {
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.stats .container .card .icon {
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats .container .card i {
+    font-size: 20px;
+}
+
+.stats .container .card h5 {
+    font-size: 50px;
+    margin: 25px auto;
+}
+
+/* End stats */
+
+/* Start Skills */
+
+.Sklls {
+    padding: 100px 0px;
+}
+
+.Sklls .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left */
+
+.Sklls .container .left {
+    width: 45%;
+}
+
+.Sklls .container .left .header {
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 60px;
+}
+
+.Sklls .container .left .header h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.Sklls .container .left .header p {
+    color: var(--color-4);
+}
+
+.Sklls .container .left .cards .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Sklls .container .left .cards .card img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.Sklls .container .left .cards .card .text {
+    width: 75%;
+    padding: 30px 0px;
+    border-bottom: 1px solid var(--color-4);
+}
+
+.Sklls .container .left .cards .card .text h6 {
+    text-align: end;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-4);
+}
+
+/* right */
+
+.Sklls .container .right {
+    width: 45%;
+}
+
+.Sklls .container .right .header {
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 60px;
+}
+
+.Sklls .container .right .header h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.Sklls .container .right .header p {
+    color: var(--color-4);
+}
+
+.Sklls .container .right .skills-reate .box {
+    margin-bottom: 20px;
+}
+
+.Sklls .container .right .skills-reate .box p {
+    margin-bottom: 10px;
+}
+
+.Sklls .container .right .skills-reate .box .reat {
+    background-color: var(--color-1);
+    height: 30px;
+    border-radius: 10px;
+}
+
+.Sklls .container .right .skills-reate .box .reat span {
+    display: block;
+    height: 100%;
+    background-color: var(--color-2);
+    border-radius: 10px;
+}
+
+.Sklls .container .right .skills-reate .box .reat span h4 {
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 4px 0;
+}
+
+/* End Skills */
+
+/* Start Quote */
+
+.Quote {
+    background-image: url(../images/quote.jpg);
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+
+.Quote::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 70%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.Quote .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.Quote .container p {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* End Quote */
+
+/* Start Pricing */
+
+.Pricing{
+    padding: 50px 0 100px 0;
+}
+
+.Pricing .container{
+    text-align: center;
+}
+
+.Pricing .container .Pricing-header {
+    padding: 50px 0px;
+}
+
+.Pricing .container .Pricing-header h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.Pricing .container .Pricing-header p {
+    margin: 15px 0;
+    line-height: 32px;
+    color: var(--color-4);
+}
+
+.Pricing .container .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
+
+.Pricing .container .cards .card {
+    background-color: rgb(222 218 220 / 25%);
+    margin-bottom: 25px;
+}
+
+.Pricing .container .cards .card .div-1 {
+    border-block: 1px solid var(--color-2);
+    padding: 20px 47px;
+}
+
+.Pricing .container .cards .card .div-1 h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Pricing .container .cards .card .div-1 p::before {
+    content: '$';
+    position: relative;
+    top: -40px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.Pricing .container .cards .card .div-1 p {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.Pricing .container .cards .card .div-1 p::after {
+    content: '/MO';
+    position: relative;
+    font-size: 20px;
+    right: -5px;
+}
+
+.Pricing .container .cards .card .div-2 {
+    border-bottom: 1px solid var(--color-2);
+}
+
+.Pricing .container .cards .card .div-2 ul li:not(:last-child)::after {
+    content: '';
+    border-bottom: 1px solid var(--color-2);
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+}
+
+.Pricing .container .cards .card .div-2 ul li span {
+    padding: 20px 15px;
+    display: block;
+}
+
+.Pricing .container .cards .card a {
+    border: 1px solid var(--color-2);
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 15px 20px;
+}
+
+.Pricing .container p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.Pricing .container .Contact {
+    background-color: var(--color-2);
+    padding: 15px 25px;
+    margin-block: 10px;
+    display: inline-block;
+    color: white;
+}
+
+/* End Pricing */

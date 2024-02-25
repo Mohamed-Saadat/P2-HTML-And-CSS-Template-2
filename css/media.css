@@ -1,0 +1,227 @@
+/* Mobile devices ==============> 320px — 480px  */
+@media all and (min-width:320px) and (max-width:480px) {
+    .container {
+        min-width: 320px;
+    }
+
+    header .container nav ul {
+        display: none;
+    }
+
+    header .container nav .menu {
+        display: block;
+    }
+
+    header .container nav .menu:hover+ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(0 0 0 / 50%);
+    }
+
+    .landing .text {
+        width: 100%;
+    }
+
+    .Services {
+        height: auto;
+    }
+
+    .Services .container .Services-cards {
+        display: block;
+        margin: 30px 0 0 0;
+    }
+
+    .Services .container .Services-cards .card {
+        display: block;
+        text-align: center;
+        padding: 0 0 100px 0;
+    }
+
+    .Services .container .Services-cards .card i {
+        margin: 0 0 20px 0;
+    }
+
+    .Design .image {
+        display: none;
+    }
+
+    .Design .text {
+        width: 100%;
+    }
+
+    .Portfolio .container ul li {
+        padding: 10px;
+    }
+
+    .video .text {
+        padding: 15px 0;
+    }
+
+    .video .text p {
+        margin: 10px;
+    }
+
+    .video .text button {
+        padding: 10px;
+        font-size: 15px;
+        border: none;
+    }
+
+    .About .container {
+        height: 400px;
+    }
+
+    .About .container {
+        height: 380px;
+    }
+
+    .Sklls .container {
+        display: block;
+    }
+
+    .Sklls .container .left {
+        width: 100%;
+    }
+
+    .Sklls .container .right {
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    .Sklls .container .left .cards .card{
+        margin-bottom: 15px;
+    }
+}
+
+/* iPads, Tablets ==============> 481px — 768px */
+@media all and (min-width:481px) and (max-width:768px) {
+    .container {
+        min-width: 460px;
+    }
+
+    header .container nav ul {
+        display: none;
+    }
+
+    header .container nav .menu {
+        display: block;
+    }
+
+    header .container nav .menu:hover+ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(0 0 0 / 50%);
+    }
+
+    .landing .text {
+        width: 100%;
+        display: block;
+    }
+
+    .Services {
+        height: auto;
+    }
+
+    .Services .container .Services-cards {
+        display: block;
+        margin: 30px 0 0 0;
+    }
+
+    .Services .container .Services-cards .card {
+        display: block;
+        text-align: center;
+        padding: 0 0 100px 0;
+    }
+
+    .Services .container .Services-cards .card i {
+        margin: 0 0 20px 0;
+    }
+
+    .Design .image {
+        display: none;
+    }
+
+    .Design .text {
+        width: 100%;
+    }
+
+    .About .container {
+        height: 380px;
+    }
+
+    .Sklls .container {
+        display: block;
+    }
+
+    .Sklls .container .left {
+        width: 100%;
+    }
+
+    .Sklls .container .right {
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    .Sklls .container .left .cards .card{
+        margin-bottom: 25px;
+    }
+}
+
+/* Small screens, laptops ======> 769px — 1024px */
+@media all and (min-width:769px) and (max-width:1024px) {
+    .container {
+        width: 750px;
+    }
+
+    .landing .text .content {
+        width: 500px;
+    }
+
+    .Design .image {
+        display: none;
+    }
+
+    .Design .text {
+        width: 100%;
+    }
+
+    .About .container {
+        height: 400px;
+    }
+}
+
+/* Desktops, large screens =====> 1025px — 1200px */
+@media all and (min-width:1025px) and (max-width:1200px) {
+    .container {
+        width: 1005px;
+    }
+
+    .landing .text .content {
+        width: 500px;
+    }
+
+    .About .container {
+        height: 470px;
+    }
+}
+
+/* Extra large screens, TV =====> 1201px and more */
+@media all and (min-width:1201px) {
+    .container {
+        width: 1180px;
+    }
+
+    .landing .text .content {
+        width: 500px;
+    }
+}
